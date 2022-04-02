@@ -1,0 +1,229 @@
+<div class="container" style="margin-top: 58px">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../../../assets/images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+    </div>
+    <div class="col-md-6 contents">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="mb-4">
+            <h3>Sign In</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+          </div>
+
+
+          <form action="#" method="post" class="form-login" #f="ngForm" (ngSubmit)="f.form.valid && ngSubmit()"
+                novalidate>
+
+            <div class="form-group first">
+              <label>Username</label>
+              <input name="username" [(ngModel)]="form.username" #username class="form-control" required minlength="3">
+              <!--              <mat-error *ngIf="username.hasError('required')">the name is required</mat-error>-->
+            </div>
+
+
+            <div class="form-group last mb-4">
+              <label>Password</label>
+              <input name="username" [(ngModel)]="form.password" #password class="form-control" required minlength="3"
+                     [type]="hide">
+              <!--              <mat-error *ngIf="password.hasError('required')">the name is required</mat-error>-->
+            </div>
+
+            <div class="d-flex mb-5 align-items-center">
+              <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                <input type="checkbox" checked="checked"/>
+                <div class="control__indicator"></div>
+              </label>
+              <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a> / <span class="ml-auto"><a
+                href="/blog/signup" class="forgot-pass">SingUp</a></span></span>
+            </div>
+
+            <input type="submit" value="Log In" class="btn btn-block btn-primary">
+
+            <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
+
+            <div class="social-login">
+              <a href="#" class="facebook">
+                <span class="icon-facebook mr-3"></span>
+              </a>
+              <a href="#" class="twitter">
+                <span class="icon-twitter mr-3"></span>
+              </a>
+              <a href="#" class="google">
+                <span class="icon-google mr-3"></span>
+              </a>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="../../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../../assets/js/popper.min.js"></script>
+<script src="../../../assets/js/bootstrap.min.js"></script>
+<script src="../../../assets/js/main.js"></script>
+
+<script type="text/javascript">
+
+  window['LocalConst'] = {
+    //base
+    BASE_SCRIPT_URL: 'https://zjzdmc.top/usr/themes/handsome/',
+    BLOG_URL: 'https://zjzdmc.top/',
+    BLOG_URL_N: 'https://zjzdmc.top',
+    STATIC_PATH: 'https://zjzdmc.top/usr/themes/handsome/assets/',
+    BLOG_URL_PHP: 'https://zjzdmc.top/',
+    VDITOR_CDN: 'https://cdn.jsdelivr.net/npm/vditor@3.8.4',
+    MATHJAX_SVG_CDN: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.min.js',
+    THEME_VERSION: '8.2.12021030201',
+    THEME_VERSION_PRO: '8.2.1',
+    DEBUG_MODE: '0',
+
+    //comment
+    COMMENT_NAME_INFO: '必须填写昵称或姓名',
+    COMMENT_EMAIL_INFO: '必须填写电子邮箱地址',
+    COMMENT_EMAIL_LEGAL_INFO: '邮箱地址不合法',
+    COMMENT_CONTENT_INFO: '必须填写评论内容',
+    COMMENT_SUBMIT_ERROR: '提交失败，请重试！',
+    COMMENT_CONTENT_LEGAL_INFO: '提交失败,评论被拦截或者进入审核区域',
+    COMMENT_CONTENT_CHECK_INFO: '发布的评论不在当前评论页，请切换到评论第一页查看',
+    COMMENT_TITLE: '评论通知',
+
+    //login
+    LOGIN_TITLE: '登录通知',
+    LOGIN_USERNAME_INFO: '必须填写用户名',
+    LOGIN_PASSWORD_INFO: '请填写密码',
+    LOGIN_SUBMIT_ERROR: '登录失败，请重新登录',
+    LOGIN_SUBMIT_INFO: '用户名或者密码错误，请重试',
+    LOGIN_SUBMIT_SUCCESS: '登录成功',
+    CLICK_TO_REFRESH: '点击以刷新页面',
+    LOGOUT_SUCCESS_REFRESH: '退出成功，正在刷新当前页面',
+
+    LOGOUT_ERROR: '退出失败，请重试',
+    LOGOUT_SUCCESS: '退出成功',
+    SUBMIT_PASSWORD_INFO: '密码错误，请重试',
+
+    //comment
+    ChANGYAN_APP_KEY: '',
+    CHANGYAN_CONF: '',
+
+    COMMENT_SYSTEM: '0',
+    COMMENT_SYSTEM_ROOT: '0',
+    COMMENT_SYSTEM_CHANGYAN: '1',
+    COMMENT_SYSTEM_OTHERS: '2',
+    EMOJI: '表情',
+    COMMENT_NEED_EMAIL: '1',
+    COMMENT_REJECT_PLACEHOLDER: '居然什么也不说，哼',
+    COMMENT_PLACEHOLDER: '说点什么吧……',
+
+    //pjax
+    IS_PJAX: '1',
+    IS_PAJX_COMMENT: '1',
+    PJAX_ANIMATE: 'big-counter',
+    PJAX_TO_TOP: '0',
+    TO_TOP_SPEED: '100',
+
+
+    USER_COMPLETED: {"data": ""},
+    VDITOR_COMPLETED: {"data": ""},
+
+    //ui
+    OPERATION_NOTICE: '操作通知',
+    SCREENSHOT_BEGIN: '正在生成当前页面截图……',
+    SCREENSHOT_NOTICE: '点击顶部下载按钮保存当前卡片',
+    SCREENSHORT_ERROR: '由于图片跨域原因导致截图失败',
+    SCREENSHORT_SUCCESS: '截图成功',
+
+    //music
+    MUSIC_NOTICE: '播放通知',
+    MUSIC_FAILE: '当前音乐地址无效，自动为您播放下一首',
+    MUSIC_FAILE_END: '当前音乐地址无效',
+    MUSIC_LIST_SUCCESS: '歌单歌曲加载成功',
+    MUSIC_API: 'https://zjzdmc.top/action/handsome-meting-api?server=:server&type=:type&id=:id&auth=:auth&r=:r',
+    MUSIC_API_PARSE: 'https://zjzdmc.top/action/handsome-meting-api?do=parse',
+
+    //option
+    TOC_TITLE: '文章目录',
+    HEADER_FIX: '固定头部',
+    ASIDE_FIX: '固定导航',
+    ASIDE_FOLDED: '折叠导航',
+    ASIDE_DOCK: '置顶导航',
+    CONTAINER_BOX: '盒子模型',
+    DARK_MODE: '深色模式',
+    DARK_MODE_AUTO: '深色模式（自动）',
+    DARK_MODE_FIXED: '深色模式（固定）',
+    EDITOR_CHOICE: 'origin',
+    NO_LINK_ICO: '',
+    NO_SHOW_RIGHT_SIDE_IN_POST: '',
+
+    CDN_NAME: '',
+    LAZY_LOAD: '',
+    PAGE_ANIMATE: '1',
+    THEME_COLOR: '14',
+    THEME_COLOR_EDIT: 'white-white-white',
+    THEME_HEADER_FIX: '1',
+    THEME_ASIDE_FIX: '1',
+    THEME_ASIDE_FOLDED: '',
+    THEME_ASIDE_DOCK: '',
+    THEME_CONTAINER_BOX: '1',
+    THEME_HIGHLIGHT_CODE: '1',
+    THEME_TOC: '1',
+    THEME_DARK_MODE: 'auto',
+    THEME_DARK_MODE_VALUE: 'auto',
+    SHOW_SETTING_BUTTON: '1',
+
+    THEME_DARK_HOUR: '18',
+    THEME_LIGHT_HOUR: '6',
+    THUMB_STYLE: 'normal',
+    AUTO_READ_MODE: '',
+    SHOW_LYRIC: '',
+    AUTO_SHOW_LYRIC: '1',
+    //代码高亮
+    CODE_STYLE_LIGHT: 'vs',
+    CODE_STYLE_DARK: 'vs',
+    THEME_POST_CONTENT: '1',
+    //other
+    OFF_SCROLL_HEIGHT: '55',
+    SHOW_IMAGE_ALT: '1',
+    USER_LOGIN: '',
+    USE_CACHE: '1',
+    POST_SPEECH: '1',
+    POST_MATHJAX: '1',
+    SHOW_FOOTER: '1',
+    IS_TRANSPARENT: '',
+    LOADING_IMG: '',
+
+    FIRST_SCREEN_ANIMATE: ''
+  };
+
+  if ('serviceWorker' in navigator) {
+    if (LocalConst.USE_CACHE) {
+      navigator.serviceWorker.register(LocalConst.BLOG_URL + 'sw.min.js?v=8.2.12021030201')
+        .then(function (reg) {
+
+        }).catch(function (error) {
+        console.log('cache failed with ' + error); // registration failed
+      });
+    } else {
+      navigator.serviceWorker.getRegistrations()
+        .then(function (registrations) {
+          for (var index in registrations) {
+            registrations[index].unregister();
+            // 清除缓存
+            window.caches && caches.keys && caches.keys().then(function (keys) {
+              keys.forEach(function (key) {
+                caches.delete(key);
+              });
+            });
+            console.log("unregister success")
+          }
+        });
+    }
+  }
+</script>
+
